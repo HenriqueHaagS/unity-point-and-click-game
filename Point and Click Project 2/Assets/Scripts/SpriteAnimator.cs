@@ -14,19 +14,20 @@ public class SpriteAnimator : MonoBehaviour
         {
             Debug.Log("StopCoroutine(previousAnimation)");
             StopCoroutine(previousAnimation);
-
+            StartCoroutine(PlayAnimationCoroutine(data));
         }
         else // Coroutine empty
         {
             Debug.Log("StartCoroutine(PlayAnimationCoroutine(data))");
-            previousAnimation = StartCoroutine(PlayAnimationCoroutine(data)); // passes data to Coroutine and stores in previousAnimation variable
+            previousAnimation = StartCoroutine(PlayAnimationCoroutine(data)); // passes data to Coroutine, starts, and stores in previousAnimation variable
         }
     }
     public IEnumerator PlayAnimationCoroutine(AnimationData data)
     {
         if (data == null)
         {
-            data = baseAnimation;
+            Debug.Log("PlayAnimationCoroutine(null)");
+                data = baseAnimation;
         }
 
         int spritesAmount = data.sprites.Length, i = 0; // declares int variables

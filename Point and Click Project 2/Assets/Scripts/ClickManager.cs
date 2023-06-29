@@ -15,7 +15,7 @@ public class ClickManager : MonoBehaviour
     public void GoToItem(ItemData item)
     {
         StartCoroutine(gameManager.MoveToPoint(player, item.goToPoint.position)); // starts coroutine passing player transform and goToPoint transform in gameManager
-        player.GetComponent<SpriteAnimator>().PlayAnimation(gameManager.playerAnimations[1]); // play PlayAnimation function on SpriteAnimator passing 
+        player.GetComponent<SpriteAnimator>().PlayAnimation(gameManager.playerAnimations[1]); // play PlayAnimation function on SpriteAnimator
         playerWalking = true;
         TryGettingItem(item);
         StartCoroutine(UpdateSceneAfterAction(item));
