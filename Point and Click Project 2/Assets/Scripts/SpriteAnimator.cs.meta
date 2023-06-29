@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 1f0c7a572ef3de7418e9d03eff39e236
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mySpriteRenderer: {instanceID: 0}
+  - baseAnimation: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
