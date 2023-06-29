@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293acdad15b5554498d577277de67316, type: 3}
   m_Name: Player Walk
   m_EditorClassIdentifier: 
-  framesOfGap: 15
+  framesOfGap: 9
   sprites:
   - {fileID: 226702753830753226, guid: 1d5e7a5b74371794c9ebc61cab0210b5, type: 3}
   - {fileID: -7921052967969465774, guid: 1d5e7a5b74371794c9ebc61cab0210b5, type: 3}

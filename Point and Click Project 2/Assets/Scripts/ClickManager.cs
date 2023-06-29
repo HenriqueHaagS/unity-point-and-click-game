@@ -35,7 +35,7 @@ public class ClickManager : MonoBehaviour
         }
         foreach (GameObject g in item.objectsToRemove)
         {
-            Destroy(g); // remove objects
+            Destroy(g);
         }
         player.GetComponent<SpriteAnimator>().PlayAnimation(null); //Play players base animation on Sprite Animator script
         Debug.Log("item collected");
